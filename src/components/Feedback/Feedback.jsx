@@ -1,0 +1,28 @@
+import React from "react";
+import AddFeedback from "./AddFeedback";
+
+const Feedback = () => {
+  return (
+    <>
+      <div className="bg-[#F4F6FC]">
+        <div className="container  ">
+          <div className=" md:grid grid-cols-3 gap-28 py-32">
+            <div className=" md:col-span-1 ">
+              <h1 className="mb-4 text-3xl md:text-[38px] text-[#282938] font-semibold leading-14">
+               What our clients say about us
+              </h1>
+              <p className="md:text-[18px] text-gray-600 font-medium leading-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+              </p>
+            </div>
+            <div className="col-span-2">
+              <AddFeedback/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Feedback;

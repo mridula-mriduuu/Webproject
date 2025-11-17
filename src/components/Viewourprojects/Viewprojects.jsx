@@ -1,0 +1,145 @@
+import React from "react";
+import ArrowBTN from "../Banner/ArrowBTN";
+import Card from "../../assets/ViewProject/Card.png";
+import Card2 from "../../assets/ViewProject/Card2.png";
+import Card3 from "../../assets/ViewProject/Card3.png";
+import { Link } from "react-router-dom";
+
+const Viewprojects = () => {
+  return (
+    <>
+      <div className="container md:py-32">
+        <div className="flex flex-col gap-8 md:flex-row justify-between items-center mb-8 md:mb-16">
+          <h1 className="text-5xl font-semibold leading-16 text-[#282938]">
+            View our projects
+          </h1>
+          <ArrowBTN className="mb-5 md:mb-0 !text-[#282938] fill-current hover:!text-black">
+            <Link to={"/Work"}>View More</Link>
+          </ArrowBTN>
+        </div>
+
+        <div className="flex flex-col gap-4 md:flex md:flex-row md:gap-8">
+          <div className="relative group touch-manipulation">
+            <img className="w-full h-full rounded-[11px]" src={Card} alt="" />
+
+            <div
+              className="
+                absolute inset-0 rounded-[11px] 
+                before:content-[''] before:absolute before:inset-0
+                before:w-0 before:h-full before:rounded-[11px]
+                before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
+                before:transition-all before:duration-500
+                group-hover:before:w-[415px] active:before:w-full focus:before:w-full
+                flex flex-col justify-end items-start px-10 py-10
+              "
+            >
+              <div
+                className="
+                  opacity-0 transition-all duration-500 ease-in-out
+                  group-hover:opacity-100 active:opacity-100 focus:opacity-100
+                  group-hover:translate-y-0 active:translate-y-0 focus:translate-y-0
+                  text-white z-10 translate-x-2
+                "
+              >
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-2xl font-semibold leading-[35px]">
+                    Workhub office Webflow Design
+                  </h1>
+                  <p className="text-[16px] leading-7 font-medium w-[70%]">
+                    Euismod faucibus turpis eu gravida mi. Pellentesque et velit
+                    aliquam.
+                  </p>
+                  <ArrowBTN className="!font-medium !text-[16px] !leading-7 !text-[#FCD980]">
+                    View project
+                  </ArrowBTN>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            {/* CARD 2 */}
+            <div className="relative group w-full h-[284px] rounded-[11px] overflow-hidden touch-manipulation cursor-pointer">
+              <img
+                className="w-full md:w-[405px] h-full object-cover rounded-[11px]"
+                src={Card2}
+                alt="Project"
+              />
+
+              <div
+                className="
+    absolute inset-0 rounded-[11px] overflow-hidden
+    before:content-[''] before:absolute before:inset-0
+    before:w-full before:h-0 before:rounded-[11px]
+    before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
+    before:transition-all before:duration-500
+    group-hover:before:h-full group-active:before:h-full group-focus:before:h-full 
+    flex flex-col justify-end items-start px-8 py-8
+  "
+              >
+                <div
+                  className="
+          opacity-0 translate-y-4 transition-all duration-500 ease-in-out
+          group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100
+          group-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0
+          text-white z-10
+        "
+                >
+                  <div className="flex flex-col gap-3">
+                    <h1 className="text-xl font-semibold leading-[30px]">
+                      Unisaas Website Design
+                    </h1>
+                    <ArrowBTN className="!font-medium !text-[16px] !leading-7 !text-[#FCD980]">
+                      View project
+                    </ArrowBTN>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CARD 3 */}
+            <div className="relative group w-full h-[284px] rounded-[11px] overflow-hidden touch-manipulation cursor-pointer">
+              <img
+                className="w-full md:w-[405px] h-[284px] object-cover rounded-[11px]"
+                src={Card3}
+                alt="Project"
+              />
+
+              <div
+                className="
+    absolute inset-0 rounded-[11px] overflow-hidden
+    before:content-[''] before:absolute before:inset-0
+    before:w-full before:h-0 before:rounded-[11px]
+    before:bg-gradient-to-b before:from-[#1C1E53]/60 before:to-[#1C1E53]/90
+    before:transition-all before:duration-500
+    group-hover:before:h-full group-active:before:h-full group-focus:before:h-full 
+    flex flex-col justify-end items-start px-8 py-8
+  "
+              >
+                <div
+                  className="
+          opacity-0 translate-y-4 transition-all duration-500 ease-in-out
+          group-hover:opacity-100 group-active:opacity-100 group-focus:opacity-100
+          group-hover:translate-y-0 group-active:translate-y-0 group-focus:translate-y-0
+          text-white z-10
+        "
+                >
+                  <div className="flex flex-col gap-3">
+                    <h1 className="text-xl font-semibold leading-[30px]">
+                      Unisaas Website Design
+                    </h1>
+                    <ArrowBTN className="!font-medium !text-[16px] !leading-7 !text-[#FCD980]">
+                      View project
+                    </ArrowBTN>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Viewprojects;
